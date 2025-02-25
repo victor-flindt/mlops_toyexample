@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/982302893041600849/ab6a776ad7914befac7b7b7e3d417b9f/artifacts
+deleted_time: 1740061638977
+end_time: 1740060703209
+entry_point_name: ''
+experiment_id: '982302893041600849'
+lifecycle_stage: deleted
+run_id: ab6a776ad7914befac7b7b7e3d417b9f
+run_name: Viggo test
+run_uuid: ab6a776ad7914befac7b7b7e3d417b9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740060697719
+status: 3
+tags: []
+user_id: viggo

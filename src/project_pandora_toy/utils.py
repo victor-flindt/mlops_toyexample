@@ -1,10 +1,15 @@
+import logging
+from configs.filter_classes import *
+from pathlib import Path
+import json
+from os import getcwd
 
-def logger_setup(log_file_name: str, logger_name: str = 'FS_logger') -> None:
+def logger_setup(log_file_name: str, logger_name: str) -> None:
     """Sets up the logger for the script to log to a specific file and logger.
 
     Args:
         log_file_name (str): filename for the instance of the logger
-        logger_name (str): Name of the logger to be configured (default: 'FS_logger')
+        logger_name (str): Name of the logger to be configured (default: 'pandora_toylogger')
     """
 
     # Check if the logger already exists
@@ -16,7 +21,7 @@ def logger_setup(log_file_name: str, logger_name: str = 'FS_logger') -> None:
 
     # If logger doesn't exist, set it up:
     # Load configuration file
-    config_file = Path(os.getcwd() + "/logs/loggings_configs/config.json")
+    config_file = Path(getcwd() + "/src/project_pandora_toy/configs/log_configs.json")
 
     with open(config_file) as f_in:
         config = json.load(f_in)
@@ -24,12 +29,10 @@ def logger_setup(log_file_name: str, logger_name: str = 'FS_logger') -> None:
         # Dynamically set the filename for the file handler in the config
         config['handlers']['file']['filename'] = log_file_name
 
-        # Check if logger_name is in config, and if not, add it
+        # Check if the logger_name exists in the config
         if logger_name not in config['loggers']:
-            config['loggers'][logger_name] = {
-                'level': 'DEBUG',
-                'handlers': ['stderr', 'file']
-            }
+            # Raise an AssertionError if the logger is not in the config
+            raise AssertionError(f"Logger '{logger_name}' is not set up in the config file.")
 
     # Apply the logging configuration
     logging.config.dictConfig(config)

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/viggo/Desktop/mlops_toyexample/mlruns/0/316410355ba64ecba8467b7725ab0ece/artifacts
+end_time: 1739991780929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 316410355ba64ecba8467b7725ab0ece
+run_name: adventurous-bird-671
+run_uuid: 316410355ba64ecba8467b7725ab0ece
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739991769904
+status: 3
+tags: []
+user_id: viggo

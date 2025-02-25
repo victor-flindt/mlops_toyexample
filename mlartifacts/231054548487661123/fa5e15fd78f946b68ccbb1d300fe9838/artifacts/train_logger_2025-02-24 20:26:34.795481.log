@@ -1,0 +1,15 @@
+[WARNING] 2025-02-24T20:26:35+0100: Starting training of experiment defect_detection_of_jewlerry_Pandora, Run name: viggo_test_2025-02-24 20:26:34.795469.
+[INFO] 2025-02-24T20:26:35+0100: Epoch 0 accuracy 0.7436872499682179
+[INFO] 2025-02-24T20:26:35+0100: Epoch 1 accuracy 9.385692956542906
+[INFO] 2025-02-24T20:26:35+0100: Epoch 2 accuracy 2.647657347199559
+[INFO] 2025-02-24T20:26:36+0100: Epoch 3 accuracy 4.658561533831681
+[WARNING] 2025-02-24T20:26:36+0100: OOOHH NOOOO something happened, This is so important we should show it in the terminal
+[INFO] 2025-02-24T20:26:36+0100: Epoch 4 accuracy 5.768944109443503
+[INFO] 2025-02-24T20:26:37+0100: Epoch 5 accuracy 4.110576554662918
+[INFO] 2025-02-24T20:26:37+0100: Epoch 6 accuracy 8.257964300087938
+[INFO] 2025-02-24T20:26:38+0100: Epoch 7 accuracy 1.6487051741586267
+[INFO] 2025-02-24T20:26:38+0100: Epoch 8 accuracy 3.8294350225656704
+[INFO] 2025-02-24T20:26:38+0100: Epoch 9 accuracy 8.709799558136131
+[INFO] 2025-02-24T20:26:39+0100: Epoch 10 accuracy 1.9939514844097128
+[INFO] 2025-02-24T20:26:39+0100: model training done saving best model with accruacy 9.386
+[INFO] 2025-02-24T20:26:39+0100: Ending experiment defect_detection_of_jewlerry_Pandora, Run name: viggo_test_2025-02-24 20:26:34.795469.

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/viggo/Desktop/mlops_toyexample/mlruns/0/1ea867cadfc2436f918a2e29322b4468/artifacts
+end_time: 1739991765021
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ea867cadfc2436f918a2e29322b4468
+run_name: sedate-rook-776
+run_uuid: 1ea867cadfc2436f918a2e29322b4468
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739991755263
+status: 3
+tags: []
+user_id: viggo
