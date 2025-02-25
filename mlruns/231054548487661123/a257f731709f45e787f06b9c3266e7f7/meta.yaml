@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/231054548487661123/a257f731709f45e787f06b9c3266e7f7/artifacts
+deleted_time: 1740521633211
 end_time: 1740426945873
 entry_point_name: ''
 experiment_id: '231054548487661123'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: a257f731709f45e787f06b9c3266e7f7
 run_name: viggo_test_2025-02-24 20:55:40.732134
 run_uuid: a257f731709f45e787f06b9c3266e7f7

@@ -1,64 +1,17 @@
 # from project_pandora_toy.model import Model
 # from project_pandora_toy.data import MyDataset
-from random import random
-from utils import logger_setup
+
+from utils import logger_setup, calculate_metrics, get_parameters
 from datetime import datetime
 from logging import getLogger
 import time
 import mlflow
 from tqdm import tqdm
+from random import random
 
-def inference(model , inference_data: str) -> str:
-    """ Following function returns a str given a certain input to a given model
-
-    Args:
-        mode (torch.model): pytorch.model.model object
-        inference_data (str): string data.
-
-    Returns:
-        str: returns the output string generated from inference from the model.
+def train() -> None:
+    """ Main training loop for x,y,z model
     """
-
-    answer = model(inference_data)
-
-    return answer
-
-
-def calculate_metrics(model, validataion_data: list[dict]) -> dict:
-    """ The following function calculates the params; f1, recall, precision etc.
-        given a validation data set
-
-    Args:
-        model (torch.model): model to be tested
-        validataion_data (list[dict]): data to be tested against
-
-    Returns:
-        dict: paramters dict.
-    """
-
-    params = {'accuracy':1*random(),
-              'f1':1*random(),
-              'recall':1*random()}
-
-
-    return params
-
-def get_parameters() -> dict:
-    """ Following function collecst parameters regarding experiment
-
-    Returns:
-        dict: Parameter dictionary.
-    """
-
-    params = {'Learning rate': 0.01,
-              'Experiment start time': datetime.now(),
-              'Dataset name': 'dataset A',
-              'Compute resource': 'EC2 gndr4xLarge'
-              }
-    return params
-
-
-def train():
 
     ## Variables
     ## Misc

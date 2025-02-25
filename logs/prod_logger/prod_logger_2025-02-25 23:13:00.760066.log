@@ -1,0 +1,10 @@
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 0, with confidence: 0.759
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 1, with confidence: 0.963
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 2, with confidence: 0.034
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 3, with confidence: 0.871
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 4, with confidence: 0.536
+[CRITICAL] 2025-02-25T23:13:00+0100: Critical error, inference script encountered x,y,z error. Sending email to victor_flindt@pandora.com
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 6, with confidence: 0.791
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 7, with confidence: 0.429
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 8, with confidence: 0.056
+[DEBUG] 2025-02-25T23:13:00+0100: Inference ran successfully with prediction 9, with confidence: 0.904

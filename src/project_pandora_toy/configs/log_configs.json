@@ -1,41 +1,58 @@
 {
     "version": 1,
-    "disable_existing_loggers": false,
+    "disable_existing_loggers": true,
     "formatters": {
-        "simple": {
-            "format": "%(levelname)s: %(message)s"
-        },
-        "detailed": {
-            "format": "[%(levelname)s] %(asctime)s: %(message)s",
-            "datefmt": "%Y-%m-%dT%H:%M:%S%z"
-        }
+      "simple": {
+        "format": "%(levelname)s: %(message)s"
+      },
+      "detailed": {
+        "format": "[%(levelname)s] %(asctime)s: %(message)s",
+        "datefmt": "%Y-%m-%dT%H:%M:%S%z"
+      }
+      
     },
     "handlers": {
-        "stdout_info": {
-            "class": "logging.StreamHandler",
-            "level": "INFO",
-            "formatter": "simple",
-            "stream": "ext://sys.stdout"
-        },
-        "stderr_warning": {
-            "class": "logging.StreamHandler",
-            "level": "WARNING",
-            "formatter": "simple",
-            "stream": "ext://sys.stderr"
-        },
-        "file": {
-            "class": "logging.handlers.RotatingFileHandler",
-            "level": "DEBUG",
-            "formatter": "detailed",
-            "filename": "",
-            "maxBytes": 100000,
-            "backupCount": 3
-        }
+      "stdout_info": {
+        "class": "logging.StreamHandler",
+        "level": "INFO",
+        "formatter": "simple",
+        "stream": "ext://sys.stdout"
+      },
+      "stderr_warning": {
+        "class": "logging.StreamHandler",
+        "level": "WARNING",
+        "formatter": "detailed",
+        "stream": "ext://sys.stderr"
+      },
+      "file": {
+        "class": "logging.handlers.RotatingFileHandler",
+        "level": "DEBUG",
+        "formatter": "detailed",
+        "maxBytes": 100000,
+        "backupCount": 3
+      },
+      "critial_send_email": {
+        "class": "logging.StreamHandler",
+        "level": "CRITICAL",
+        "formatter": "detailed",
+        "stream": "ext://sys.stderr"
+      }
     },
     "loggers": {
-        "train_logger": {
-            "level": "DEBUG",
-            "handlers": ["stdout_info", "stderr_warning", "file"]
-        }
+
+      "root": {
+        "level": "DEBUG",
+        "handlers": ["stdout_info", "stderr_warning", "file"]
+      },
+
+      "train_logger": {
+        "level": "DEBUG"
+      },
+
+      "prod_logger": {
+        "level": "DEBUG",
+        "handlers": ["critial_send_email"]
+      }
     }
-}
+  }
+  

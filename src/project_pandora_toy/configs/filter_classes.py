@@ -15,3 +15,14 @@ class IgnoreRepeatedMessages(logging.Filter):
         else:
             self.logged_messages.add(record.msg)
             return 1
+        
+class ShowBelowErrorOnly(logging.Filter):
+    """
+     Filter class that shows messages BELOW Critical
+     """
+    def __init__(self):
+        super(ShowBelowErrorOnly, self).__init__()
+        self.logged_messages = set()
+    
+    def filter(self, record):
+        return record.levelno <= logging.ERROR 
