@@ -65,9 +65,6 @@ def logger_setup(log_file_name: str, logger_name: str) -> None:
     # Check if the logger already exists
     logger = logging.getLogger(logger_name)
     root_logger = logging.getLogger('root')
-    if logger.hasHandlers():
-        # Logger already exists, no need to set it up again
-        return
     
     # If logger doesn't exist, set it up:
     # Load configuration file
@@ -100,6 +97,4 @@ def logger_setup(log_file_name: str, logger_name: str) -> None:
         if root_handler.get_name() == "stdout_info":
             root_handler.addFilter(exclusive_show_below_error)
 
-
-    # Disable propagation to prevent the logs from being forwarded to the root logger
     logger.propagate = True 

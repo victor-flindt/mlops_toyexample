@@ -2,6 +2,8 @@ from utils import inference, logger_setup
 from datetime import datetime
 from logging import getLogger
 from random import random
+
+
 def main() -> None:
     """ Inference loop to run in prod for model x,y,z
 

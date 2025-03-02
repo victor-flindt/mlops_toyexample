@@ -51,6 +51,7 @@ def train() -> None:
 
         if i == 3:
             train_logger.warning(msg= f"OOOHH NOOOO something happened, This is so important we should show it in the terminal")
+            
         metrics = calculate_metrics(None, None)
         mlflow.log_metrics(metrics,step=i)
             
@@ -58,6 +59,7 @@ def train() -> None:
         
     train_logger.info(f"model training done saving best model with accruacy {round(best_model_score,3)}")
     train_logger.debug(f"Ending experiment {EXPERIMENT}, Run name: {EXPERIMENT_RUN_NAME}.")
+    
     mlflow.log_artifact(local_path=LOGGER_FILE_PATH)
 
     mlflow.end_run()

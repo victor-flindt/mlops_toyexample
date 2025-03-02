@@ -18,9 +18,9 @@
         "formatter": "simple",
         "stream": "ext://sys.stdout"
       },
-      "stderr_warning": {
+      "stderr_error": {
         "class": "logging.StreamHandler",
-        "level": "WARNING",
+        "level": "ERROR",
         "formatter": "detailed",
         "stream": "ext://sys.stderr"
       },
@@ -28,7 +28,7 @@
         "class": "logging.handlers.RotatingFileHandler",
         "level": "DEBUG",
         "formatter": "detailed",
-        "maxBytes": 100000,
+        "maxBytes": 1000000,
         "backupCount": 3
       },
       "critial_send_email": {
@@ -42,7 +42,7 @@
 
       "root": {
         "level": "DEBUG",
-        "handlers": ["stdout_info", "stderr_warning", "file"]
+        "handlers": ["stdout_info", "stderr_error", "file"]
       },
 
       "train_logger": {

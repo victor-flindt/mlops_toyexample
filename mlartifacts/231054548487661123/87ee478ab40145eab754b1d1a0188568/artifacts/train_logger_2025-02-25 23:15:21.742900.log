@@ -1,0 +1,19 @@
+[DEBUG] 2025-02-25T23:15:22+0100: Popen(['git', 'version'], cwd=/home/viggo/Desktop/mlops_toyexample, stdin=None, shell=False, universal_newlines=False)
+[DEBUG] 2025-02-25T23:15:22+0100: Popen(['git', 'version'], cwd=/home/viggo/Desktop/mlops_toyexample, stdin=None, shell=False, universal_newlines=False)
+[DEBUG] 2025-02-25T23:15:22+0100: Popen(['git', 'check-ignore', '/home/viggo/Desktop/mlops_toyexample/src/project_pandora_toy'], cwd=/home/viggo/Desktop/mlops_toyexample, stdin=None, shell=False, universal_newlines=False)
+[DEBUG] 2025-02-25T23:15:22+0100: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/viggo/Desktop/mlops_toyexample, stdin=<valid stream>, shell=False, universal_newlines=False)
+[INFO] 2025-02-25T23:15:22+0100: Starting training of experiment defect_detection_of_jewlerry_Pandora, Run name: viggo_test_2025-02-25 23:15:21.742886.
+[DEBUG] 2025-02-25T23:15:22+0100: Epoch 0 accuracy 2.295263305374442
+[DEBUG] 2025-02-25T23:15:22+0100: Epoch 1 accuracy 5.377250036307839
+[DEBUG] 2025-02-25T23:15:23+0100: Epoch 2 accuracy 5.107529104452614
+[DEBUG] 2025-02-25T23:15:23+0100: Epoch 3 accuracy 0.5207967512551559
+[WARNING] 2025-02-25T23:15:23+0100: OOOHH NOOOO something happened, This is so important we should show it in the terminal
+[DEBUG] 2025-02-25T23:15:23+0100: Epoch 4 accuracy 9.507925668771437
+[DEBUG] 2025-02-25T23:15:24+0100: Epoch 5 accuracy 1.6362415682216036
+[DEBUG] 2025-02-25T23:15:24+0100: Epoch 6 accuracy 5.536431454977663
+[DEBUG] 2025-02-25T23:15:25+0100: Epoch 7 accuracy 9.469601961440539
+[DEBUG] 2025-02-25T23:15:25+0100: Epoch 8 accuracy 1.6802041081148356
+[DEBUG] 2025-02-25T23:15:25+0100: Epoch 9 accuracy 3.083041030708702
+[DEBUG] 2025-02-25T23:15:26+0100: Epoch 10 accuracy 9.03262129352086
+[INFO] 2025-02-25T23:15:26+0100: model training done saving best model with accruacy 9.508
+[DEBUG] 2025-02-25T23:15:26+0100: Ending experiment defect_detection_of_jewlerry_Pandora, Run name: viggo_test_2025-02-25 23:15:21.742886.
